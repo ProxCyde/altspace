@@ -1,2 +1,2 @@
 # altspace
-For Altspace SDK development.
+For development with the Altspace SDK.

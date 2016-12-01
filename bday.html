@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Paradox</title>
+    <meta name="description" content="ProxCyde's Paradox">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.0.0/dist/aframe-altspace-component.min.js"></script>
+    
+    <style type="text/css">
+        .a-enter-vr{display:none;}
+    </style>
+    
+  </head>
+  <body>
+    
+    <a-scene altspace='vertical-align: bottom;' scale="1 1 1">
+      
+      <a-assets>
+        
+        <a-asset-item id="table-obj" src="./assets/bday/table.obj"></a-asset-item>
+        <a-asset-item id="cake-obj" src="./assets/bday/cake.obj"></a-asset-item>
+        <a-asset-item id="floor-obj" src="./assets/bday/floor.obj"></a-asset-item>
+        <!--<a-asset-item id="table-mtl" src="./assets/bday/table.mtl"></a-asset-item>-->
+        <a-asset-item id="cake-mtl" src="./assets/bday/cake.mtl"></a-asset-item>
+
+      </a-assets>
+      
+      <a-entity position="-.17 -.295 -.081" scale="1 1 1" rotation="0 -90 0">
+        
+        <a-entity obj-model="obj: #floor-obj; mtl: #cake-mtl;" scale="1 1 1" position="0 0 0" rotation="0 0 0"></a-entity>  
+        <a-entity obj-model="obj: #table-obj; mtl: #cake-mtl;" scale="1 1 1" position="0 0 0" rotation="0 0 0"></a-entity>
+        <a-entity obj-model="obj: #cake-obj; mtl: #cake-mtl;" scale="1 1 1" position="0 0 0" rotation="0 0 0"></a-entity>
+        
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
